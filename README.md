@@ -9,6 +9,7 @@ Plugin pronti da installare per **Ibex Studio**. Ogni plugin è un file `.ibexpl
 | Plugin | Versione | Cosa fa | Ibex Studio |
 |---|---|---|---|
 | [Premium HMI](premium-hmi/) | 0.4.5 | **Nuovo progetto da Premium HMI…**: legge un progetto Progea / Emerson Premium HMI (Movicon 11) e ne fa un progetto Ibex: tag, allarmi, lingue, ricette, data logger e grafici, eventi, script Basic tradotti, schermate e immagini. | 0.7.1 o successivo |
+| [IO-Link](iolink-iodd/) | 0.1.2 | **Pannello da IODD (IO-Link)…**: legge l'IODD di un dispositivo IO-Link (dall'IODDfinder o dal costruttore) e crea un template che decodifica i suoi dati di processo dal dato grezzo del PLC: valori con scala e unità, spie, valori speciali in parole, pulsanti per i dati in uscita e immagine del dispositivo. I valori decodificati sono anche proprietà del template, leggibili dal resto della pagina. | 0.7.1 o successivo |
 
 ## Installare un plugin
 
@@ -24,6 +25,7 @@ Un plugin gira isolato: niente rete, legge solo la cartella o il file che scegli
 | File | SHA-256 |
 |---|---|
 | `premium-hmi/premium-hmi-0.4.5.ibexplugin` | `611b487780f28dc83a1646ff78a04b2171b7b23aa8edefdd6ff685a1d406be25` |
+| `iolink-iodd/iolink-iodd-0.1.2.ibexplugin` | `b2e232c39cd6611de69fa188f672cf59b75a56f9002d8271d619c0916ea03dc1` |
 
 ## Licenza
 
@@ -36,6 +38,8 @@ Un plugin gira isolato: niente rete, legge solo la cartella o il file che scegli
 **Install**: download the `.ibexplugin` file, then in Ibex Studio open the **puzzle piece** in the top bar → **Manage plugins…** → **Install…**. Before installing, the Studio shows the plugin's name, version, author, commands and **SHA-256 fingerprint**: compare it with the table above. The command then shows in the puzzle menu.
 
 **Premium HMI** (0.4.5, Ibex Studio 0.7.1 or later): **New project from Premium HMI…** reads a Progea / Emerson Premium HMI (Movicon 11) project folder and makes an Ibex project of it — tags, alarms, languages, recipes, data loggers and trends, events, Basic scripts translated, screens and pictures. The preview lists what is made and what is left to do by hand.
+
+**IO-Link** (0.1.2, Ibex Studio 0.7.1 or later): **Panel from an IODD (IO-Link)…** reads the IODD of an IO-Link device (from the IODDfinder or its manufacturer) and makes a template that decodes its process data from the PLC's raw data — values with scale and unit, lamps, special values in words, buttons for the process data out, and the device's picture. The decoded values are properties of the template too, readable by the rest of the page.
 
 A plugin runs isolated: no network, it reads only the folder or file you choose, and what it proposes goes through the preview before it reaches the project, as one step Ctrl+Z takes back.
 
